@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<letter id="lettera-bellini-perucchini-venezia">
+  
+  <metadata>
+    <place>Milano</place>
+    <date normal="18xx-11-25">25 Nov:e</date>
+    <sender>Bellini</sender>
+    <recipient>Giovanni Battista Perucchini</recipient>
+  </metadata>
+
+  <text>
+    
+    <salutation>
+      Mio caro <relation>amico</relation>
+    </salutation>
+
+    <paragraph>
+      Son sicuro che mi sgridereste se non vi raccomandassi la mia amica
+      <person role="cantante">Mad.a Lewis</person>
+      la quale si porta in cotesta per cantare in qualità di prima donna al
+      <place>teatro della Fenice</place>.
+    </paragraph>
+
+    <paragraph>
+      Ella stessa ha desiderato una lettera per
+      <person role="destinatario-ripetuto">voi</person>,
+      stimandovi come tutta Europa, l’Apollo Veneto.
+    </paragraph>
+
+    <closing>
+      <formula>Ricevete i miei abbracci e credimi a tutte pruove</formula>
+    </closing>
+
+    <signature>
+      <formula>Il vostro</formula>
+      <name>Bellini</name>
+    </signature>
+
+  </text>
+
+</letter>
