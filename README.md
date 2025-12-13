@@ -37,7 +37,7 @@ Modello di codifica per una lettera, tratto da LL1_7.xml, con spiegazioni e comm
 ## 6. documento "lettera_da-compilare.xml"
 Vai al [documento](https://github.com/LauraMazzagufo/formazioneTEI/blob/main/lettera_da-compilare.xml)
 
-Riferimento slide: #9 - Dalla teoria alla pratica > Codifica di un testo epistolare
+Riferimento slide: #49 - Dalla teoria alla pratica > Codifica di un testo epistolare
 
 Si tratta del documento "lettera_modello.xml", ma modificato in modo tale da compilarlo in aula, come esercizio di codifica (tagset `correspDesc` e parte del `body`).
 
