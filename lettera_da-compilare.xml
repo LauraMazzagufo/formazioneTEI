@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- <!DOCTYPE TEI SYSTEM "tei_all.dtd"> --> 
+<!-- questo è un commento: 
+ sono parti di XML che non vengono processate dall'elaboratore
+ ma servono all'utente per commentare il codice.
+ I commenti sono sempre racchiusi tra questa precisa sequenza
+ di parentesi e trattini -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<!-- radice del documento, con namespace -->
+	<teiHeader xml:lang="it">
+	<!-- metadati -->
+		<fileDesc>
+			<titleStmt>
+				<title>Titolo del documento digitale</title>
+				<respStmt>
+					<resp>Encoding by</resp><!-- responsabile/i della codifica -->
+					<name xml:id="NC">Nome Cognome</name>
+					<name xml:id="ANC">Altro Nome Cognome</name>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+			<!-- tipo di edizione -->
+				<edition>Digital edition
+					<date when="2025-12">Dicembre 2025</date>
+				</edition>
+				<respStmt>
+					<resp>Edizione digitale realizzata per il Corso di ###, A.A. 2025/2026, tenuto dal prof. </resp>
+					<name ref="#NP">Nome Professore</name>
+				</respStmt>
+				<respStmt>
+					<resp>Transcription by</resp><!-- responsabile della trascrizione del testo, se c'è -->
+					<name xml:id="NT">Nome Trascrittore</name>
+				</respStmt>
+			</editionStmt>
+			<publicationStmt>
+				<authority>Università di Pavia</authority>
+				<availability status="free">
+					<p>© Laboratorio di Codifica in TEI</p>
+				</availability>
+				<publisher />
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</licence>
+					<!-- sigla ufficiale per la licenza aperta creative commons -->
+				</availability>
+				<idno type="filename">lettera_modello.xml</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<listPerson></listPerson>
+				<listPlace></listPlace>
+				<!-- qui vanno eventuali liste di persone o luoghi citati nel testo -->
+				<msDesc>
+				<!-- descrizione bibliografica del manoscritto, se presente -->
+					<msIdentifier>
+						<country>Italy</country>
+						<settlement>Cremona</settlement>
+						<institution>Biblioteca Statale di Cremona</institution>
+						<repository role="fondo">Nome Fondo</repository>
+						<idno type="inventory">segnatura</idno>
+						<altIdentifier>
+							<idno type="collocation">Collocazione all'interno dell'archivio o del museo, se conosciuta.</idno>
+						</altIdentifier>
+					</msIdentifier>
+					<msContents>
+					<!-- descrizione del contenuto della fonte pimaria -->
+						<msItem>
+							<author ref="#riferimentoAllaListaPersone">Nome dell'Autore</author>
+							<title xml:lang="it">
+							<!-- titolo della lettera o della cartolina postale -->
+								<persName ref="#riferimentoAllaListaPersone">Nome Mittente</persName> a
+								<persName ref="#riferimentoAllaListaPersone">Nome Destinatario</persName>, in
+								<placeName ref="#riferimentoAllaListaLuoghi">Luogo di scrittura della lettera, se conosciuto</placeName>,
+								<date when="aaaa-mm-gg">gg mese anno</date>
+							</title>
+							<textLang mainLang="it-x-800">Italiano di inizio Ottocento.</textLang>
+							<note>Eventuali informazioni sul carteggio o sulla lettera stessa.</note>
+						</msItem>
+					</msContents>
+					<physDesc>
+						<objectDesc>
+							<supportDesc>
+							<!-- descrizione del supporto fisico -->
+								<support>
+									<material>Descrizione della carta su cui la lettera è scritta, descrizione dell'inchiostro</material>
+									<watermark>Sono presenti filigrane?</watermark>
+									<stamp>Sono presenti sigilli, timbri o francobolli postali?</stamp>
+								</support>
+								<extent>
+									<measure type="folio">1</measure>
+									<!-- quante pagine è lungo il documento? -->
+									<dimensions unit="mm">
+									<!-- dimensioni del documento, misurante in millimetri o centimetri (da precisare in @unit) -->
+										<height>202</height>
+										<width>120</width>
+									</dimensions>
+								</extent>
+								<collation>
+									Piegatura e disposizione del testo.
+								</collation>
+								<condition>
+									<p>Condizioni fisiche del documento: è ben leggibile? presenta lacune, buchi, strappi? L'inchiostro è sbiadito?</p>
+								</condition>
+							</supportDesc>
+						</objectDesc>
+						<handDesc hands="2">
+						<!-- il documento è scritto da più persone? indicarne il numero in @n-->
+							<handNote>
+								<p>Descrivere la scrittura: a macchina? a mano libera? corsiva?</p>
+							</handNote>
+							<handNote xml:id="h1">
+								<p>Se sono riconoscibili più mani (ad esempio, quella del catalogatore, oltre a quella dell'autore) vanno segnalate qui.</p>
+							</handNote>
+						</handDesc>
+						<sealDesc>
+							<seal>
+								<p>Sono presenti sigilli?</p>
+							</seal>
+						</sealDesc>
+					</physDesc>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+
+			<!-- ############################################ ESERCIZIO DI CODIFICA #######################################-->
+			<correspDesc>
+			
+			</correspDesc>
+			<!-- ############################################ ESERCIZIO DI CODIFICA #######################################-->
+			
+			<textClass>
+				<keywords scheme="http://thes.bncf.firenze.sbn.it">
+				<!-- categorizzazione della Bilioteca Nazionale Centrale di Firenze-->
+					<term>Lettera</term>
+				</keywords>
+			</textClass>
+			<langUsage>
+			<!-- lingue usate nella lettera: per le sigle corrispondenti si vedano le linee guida della TEI -->
+				<language ident="it">Italiano</language>
+				<language ident="it-x-800">Italiano di inizio Ottocento</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc status="published">
+		<!-- registrazione di eventuali processi di revisione -->
+			<change status="first-draft" when="2025-12">First draft available in December 2025</change>
+			<change status="final-draft" when="2026-01">Final draft available in January 2026</change>
+		</revisionDesc>
+	</teiHeader>
+
+	<text subtype="manuscript" type="lettera" xml:id="LL1.7">
+	<!-- rappresentazione del contenuto testuale -->
+		<front /> <!-- non ci sono porzioni di testo che precedono la lettera vera e propria -->
+
+		<body xml:lang="it"> <!-- lettera vera e propria -->
+			<pb n="1" />
+			<!-- segnalazione dell'inizio della prima pagina -->
+
+			<div n="o_01" type="opener"><!-- oppure elemento opener -->
+				<dateline n="ab_01"><!-- riga che registra luogo e data di invio-->
+					<s n="s_01" type="sentence">
+						<lb n="1" /> <!-- segnalazione dell'inizio di una riga (dato facoltativo, può servire per edizioni particolarmente complesse) -->
+						<hi rend="align(right)"><!-- segnalazione dell'allineamento a destra, come spesso accade per la prima riga di una lettera -->
+							<placeName ref="#riferimentoAllaListaLuoghi">Luogo</placeName>
+							<date when="1830-09-25">25
+								<choice><!-- l'elemento choice serve a fornire una doppia lettura, in questo caso tra -->
+									<abbr>Nov<am>:</am><hi rend="sup">e</hi></abbr><!-- lezione abbreviata, come da fonte -->
+									<expan>Nov<ex>embr</ex>e</expan><!-- lezione con abbreviazione sciolta, per una più agevole lettura -->
+								</choice>
+							</date>
+						</hi>
+					</s>
+				</dateline>
+			</div>
+
+			<div n="t_01" type="letter-body">
+			<!-- sezione con corpo della lettera -->
+				<salute n="ab_02"><!-- saluto del destinatario -->
+					<s n="s_02" type="sentence">
+						<lb n="2"/><!-- segnalazione inizio seconda riga -->
+						Mio caro
+						<rs ref="#riferimentoAllaListaPersone" type="person">amico</rs>
+						<!-- in questo caso si usa il tag rs e non name o persName, perché nel testo non è riportato esplicitamente il nome dell'amico;
+						 il tag rs offre la possibilità di assegnare comunque un'identità alle persone citate implicitamente -->
+					</s>
+				</salute>
+				<space quantity="2" unit="line" /> <!-- prossemica -->
+				<ab n="ab_03" rend="first_line_indented" type="parag">
+				<!-- modo alternativo per codificare i paragrafi -->
+					<s n="s_03" type="sentence">
+						<lb n="3" />
+						Son sicuro che mi sgridereste
+						<lb n="4" />
+						se non vi raccomandassi la mia amica
+						<choice>
+							<abbr>Mad<am>:</am><hi rend="sup">a</hi></abbr>
+							<expan>Mad<ex>am</ex>a</expan>
+						</choice>
+						<lb n="5" />
+						<persName ref="#riferimentoAllaListaPersone" rend="underline" >Levis,</persName> la quale si porta in
+						<distinct>cotesta</distinct> 
+						[...]
+					</s>
+				</ab>
+
+				<pb break="no" n="2"/>
+				<!-- segnalazione (fine della prima e) inizio della seconda pagina -->
+				<ab n="ab_03" type="parag">
+					[...]
+				</ab>
+			</div>
+			<div n="c_01" type="closer">
+			<!-- formula di chiusura tipica del testo epistolare -->
+				<salute n="ab_06">
+					<lb n="10"/>
+					<s n="s_13" type="sentence" rend="align(right)"><!-- allineamento a destra-->
+						Il
+						<choice>
+							<abbr>vro<g ref="g01" rend="sup"/></abbr>
+							<expan>v<ex>ost</ex>ro</expan>
+						</choice>
+						<lb n="11"/>
+					</s>
+				</salute>
+				<signed rend="align(right)">
+				<!-- firma dell'autore -->
+					<persName ref="#riferimentoAllaListaPersone">Nome</persName>
+				</signed>
+			</div>
+			<pb n="3"/>
+			<pb n="4"/>
+		</body>
+
+		<back xml:lang="it">
+			<div type="notes">
+				<div type="ann_notes">
+					<p>Qui si possono aggiungere note editoriali</p>
+				</div>
+			</div>
+			<div type="bibliography">
+			<!-- BIBLIOGRAFIA-->
+				<listBibl xml:id="LL1_7_bibliography">
+					<head>Bibliografia della lettera</head>
+					<bibl xml:id="entrataBIbliografica1">
+						Autore, Titolo, Luogo: editore, anno.
+					</bibl>
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
