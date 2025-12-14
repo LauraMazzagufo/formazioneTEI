@@ -118,4 +118,47 @@ Qui modifiche effettuate:
 		<note></note>
 	</place>
 </listPlace>
+
+
+<!-- trascrizione testo nel body -->
+<body xml:lang="it"> <!-- lettera vera e propria -->
+	<pb n="2" />
+
+
+	<div type="content">
+		<opener>
+			<salute>
+				<hi rend="underline">Cara el me nuli</hi>
+			</salute>
+			<dateline>
+				<date when="1882-10-5">5 10.bre 1882.</date>
+			</dateline>
+			<placeName ref="#Milano">Milano</placeName>
+		</opener>
+		<lb />Ho ricevuto oggi la
+		<lb />tua in data del 3 coi giornali e gli articoli staccati che consegnerò al
+		<lb /><hi rend="underline">Trovatore</hi>. <persName ref="#Bedogni">Bedogni</persName>è assente da Milano – si trova a Genova, dove io 
+		<lb />gli ho spedito una lettera per Rossi raccomandandolo perché possa 
+		<lb />presentarlo alla<hi rend="underline"><persName ref="#Badino">Badino</persName></hi>. 
+		<lb />[...] gli amici - 
+		<closer>
+			T'invio i soliti abbracci per parte della <rs>zia</rs>, zie etc. - 
+			<lb />Gildo<supplied resp="#NT">,</supplied> Mariettina, e baminoni e da me abbiti sempre infiniti baci dal 
+			<salute>
+				tuo 
+				<choice>
+					<abbr>aff.<sup>o</sup></abbr>
+					<expan>aff<supplied resp="#NT">[ettuos]</supplied>o</expan>
+				</choice>
+				nuli
+			</salute>
+			<signed>
+				<persName ref="#AmilcarePonchielli">Amilcare</persName>
+			</signed>
+		</closer>
+		<postscript>
+			<p>Tante cose per parte della <rs>Maestra</rs></p>
+		</postscript>
+	</div>
+</body>
 ```
