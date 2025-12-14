@@ -61,17 +61,19 @@ Qui modifiche effettuate:
 	<correspContext>
 		<p>Non si conosce il contesto di riferimento.</p>
 	</correspContext>
-	
+
 </correspDesc>
 <!-- ############################################ ESERCIZIO DI CODIFICA #######################################-->
 			
 <!-- liste in surceDesc -->
 <listPerson>
 	<person xml:id="AmilcarePonchielli">
-		<ref type="VIAF" target="http://viaf.org/viaf/10034325"/>
-		<ref type="DNB" target="http://d-nb.info/gnd/119060507"/>
-		<forename>Amilcare</forename>
-		<surname>Ponchielli</surname>
+		<persName>
+			<ref type="VIAF" target="http://viaf.org/viaf/10034325"/>
+			<ref type="DNB" target="http://d-nb.info/gnd/119060507"/>
+			<name>Amilcare</name>
+			<surname>Ponchielli</surname>
+		</persName>
 		<sex>M</sex>
 		<birth>
 			<date when="1834">1834</date>
@@ -85,11 +87,12 @@ Qui modifiche effettuate:
 			<p>Compositore italiano.</p>
 		</note>
 	</person>
-
 	<person xml:id="TeresinaBrambilla">
-		<ref type="VIAF" target="http://viaf.org/viaf/64341188"/>
-		<forename>Teresina</forename>
-		<surname>Brambilla</surname>
+		<persName>
+			<ref type="VIAF" target="http://viaf.org/viaf/64341188"/>
+			<name>Teresina</name>
+			<surname>Brambilla</surname>
+		</persName>
 		<sex>F</sex>
 		<birth>
 			<date when="1845">1845</date>
@@ -104,14 +107,12 @@ Qui modifiche effettuate:
 		</note>
 	</person>
 </listPerson>
-
 <listPlace>
 	<place xml:id="Milano">
 		<placeName ref="https://www.geonames.org/3173435/">Milano</placeName>
 		<country key="IT">Italia</country>
 		<note></note>
 	</place>
-
 	<place xml:id="Livorno">
 		<placeName ref="https://www.geonames.org/3174659/">Livorno</placeName>
 		<country key="IT">Italia</country>
@@ -122,43 +123,50 @@ Qui modifiche effettuate:
 
 <!-- trascrizione testo nel body -->
 <body xml:lang="it"> <!-- lettera vera e propria -->
-	<pb n="2" />
+<pb n="2" />
 
 
-	<div type="content">
-		<opener>
-			<salute>
-				<hi rend="underline">Cara el me nuli</hi>
-			</salute>
-			<dateline>
-				<date when="1882-10-5">5 10.bre 1882.</date>
-			</dateline>
-			<placeName ref="#Milano">Milano</placeName>
-		</opener>
-		<lb />Ho ricevuto oggi la
-		<lb />tua in data del 3 coi giornali e gli articoli staccati che consegnerò al
-		<lb /><hi rend="underline">Trovatore</hi>. <persName ref="#Bedogni">Bedogni</persName>è assente da Milano – si trova a Genova, dove io 
-		<lb />gli ho spedito una lettera per Rossi raccomandandolo perché possa 
-		<lb />presentarlo alla<hi rend="underline"><persName ref="#Badino">Badino</persName></hi>. 
-		<lb />[...] gli amici - 
-		<closer>
-			T'invio i soliti abbracci per parte della <rs>zia</rs>, zie etc. - 
-			<lb />Gildo<supplied resp="#NT">,</supplied> Mariettina, e baminoni e da me abbiti sempre infiniti baci dal 
-			<salute>
-				tuo 
+<div type="content">
+	<opener>
+		<salute>
+			<hi rend="underline">Cara el me nuli</hi>
+		</salute>
+		<dateline>
+			<date when="1882-12-05">5 
 				<choice>
-					<abbr>aff.<sup>o</sup></abbr>
-					<expan>aff<supplied resp="#NT">[ettuos]</supplied>o</expan>
-				</choice>
-				nuli
-			</salute>
-			<signed>
-				<persName ref="#AmilcarePonchielli">Amilcare</persName>
-			</signed>
-		</closer>
-		<postscript>
-			<p>Tante cose per parte della <rs>Maestra</rs></p>
-		</postscript>
-	</div>
+					<abbr>10.bre</abbr>
+					<expan>dicembre</expan>
+				</choice> 1882.
+			</date>
+		</dateline>
+		<placeName ref="#Milano">Milano</placeName>
+	</opener>
+	<p>
+	<lb />Ho ricevuto oggi la
+	<lb />tua in data del 3 coi giornali e gli articoli staccati che consegnerò al
+	<lb /><hi rend="underline">Trovatore</hi>. <persName ref="#Bedogni">Bedogni</persName>è assente da Milano – si trova a Genova, dove io 
+	<lb />gli ho spedito una lettera per Rossi raccomandandolo perché possa 
+	<lb />presentarlo alla<hi rend="underline"><persName ref="#Badino">Badino</persName></hi>. 
+	<lb />[...] gli amici - 
+	</p>
+	<closer>
+		T'invio i soliti abbracci per parte della <rs>zia</rs>, zie etc. - 
+		<lb />Gildo<supplied resp="#NT">,</supplied> Mariettina, e baminoni e da me abbiti sempre infiniti baci dal 
+		<salute>
+			tuo 
+			<choice>
+				<abbr>aff.<hi rend="apice">o</hi></abbr>
+				<expan>aff<supplied resp="#NT">[ettuos]</supplied>o</expan>
+			</choice>
+			nuli
+		</salute>
+		<signed>
+			<persName ref="#AmilcarePonchielli">Amilcare</persName>
+		</signed>
+	</closer>
+	<postscript>
+		<p>Tante cose per parte della <rs>Maestra</rs></p>
+	</postscript>
+</div>
 </body>
 ```
