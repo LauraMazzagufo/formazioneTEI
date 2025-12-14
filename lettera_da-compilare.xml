@@ -150,53 +150,54 @@
 	<!-- rappresentazione del contenuto testuale -->
 		<front /> <!-- non ci sono porzioni di testo che precedono la lettera vera e propria -->
 
-	<body xml:lang="it"> <!-- lettera vera e propria -->
-	<pb n="2" />
-	
-	
-	<div type="content">
-		<####>
-			<####>
-				<hi rend="underline">Cara el me nuli</hi>
-			</####>
-			<####>
-				<date when="1882-12-05">5 
-					<choice>
-						<abbr>10.bre</abbr>
-						<expan>dicembre</expan>
-					</choice> 1882.
-				</date>
-			</####>
-			<placeName ref="#Milano">Milano</placeName>
-		</####>
-		<p>
-		<lb />Ho ricevuto oggi la
-		<lb />tua in data del 3 coi giornali e gli articoli staccati che consegnerò al
-		<lb /><hi rend="underline">Trovatore</hi>. <persName ref="#Bedogni">Bedogni</persName>è assente da Milano – si trova a Genova, dove io 
-		<lb />gli ho spedito una lettera per Rossi raccomandandolo perché possa 
-		<lb />presentarlo alla<hi rend="underline"><persName ref="#Badino">Badino</persName></hi>. 
-		<lb />[...] gli amici - 
-		</p>
-		<####>
-			T'invio i soliti abbracci per parte della <rs>zia</rs>, zie etc. - 
-			<lb />Gildo<supplied resp="#NT">,</supplied> Mariettina, e baminoni e da me abbiti sempre infiniti baci dal 
-			<####>
-				tuo 
-				<choice>
-					<abbr>aff.<hi rend="apice">o</hi></abbr>
-					<expan>aff<supplied resp="#NT">[ettuos]</supplied>o</expan>
-				</choice>
-				nuli
-			</####>
-			<####>
-				<persName ref="#AmilcarePonchielli">Amilcare</persName>
-			</####>
-		</####>
-		<####>
-			<p>Tante cose per parte della <rs>Maestra</rs></p>
-		</####>
-	</div>
-</body>
+		<!-- ############################################ ESERCIZIO DI CODIFICA #######################################-->
+		<body xml:lang="it"> <!-- lettera vera e propria -->
+		<pb n="2" />
+		
+		
+			<div type="content">
+				<####>
+					<####>
+						<hi rend="underline">Cara el me nuli</hi>
+					</####>
+					<####>
+						<date when="1882-12-05">5 
+							<choice>
+								<abbr>10.bre</abbr>
+								<expan>dicembre</expan>
+							</choice> 1882.
+						</date>
+					</####>
+					<placeName ref="#Milano">Milano</placeName>
+				</####>
+				<p>
+				<lb />Ho ricevuto oggi la
+				<lb />tua in data del 3 coi giornali e gli articoli staccati che consegnerò al
+				<lb /><hi rend="underline">Trovatore</hi>. <persName ref="#Bedogni">Bedogni</persName>è assente da Milano – si trova a Genova, dove io 
+				<lb />gli ho spedito una lettera per Rossi raccomandandolo perché possa 
+				<lb />presentarlo alla<hi rend="underline"><persName ref="#Badino">Badino</persName></hi>. 
+				<lb />[...] gli amici - 
+				</p>
+				<####>
+					T'invio i soliti abbracci per parte della <rs>zia</rs>, zie etc. - 
+					<lb />Gildo<supplied resp="#NT">,</supplied> Mariettina, e baminoni e da me abbiti sempre infiniti baci dal 
+					<####>
+						tuo 
+						<choice>
+							<abbr>aff.<hi rend="apice">o</hi></abbr>
+							<expan>aff<supplied resp="#NT">[ettuos]</supplied>o</expan>
+						</choice>
+						nuli
+					</####>
+					<####>
+						<persName ref="#AmilcarePonchielli">Amilcare</persName>
+					</####>
+				</####>
+				<####>
+					<p>Tante cose per parte della <rs>Maestra</rs></p>
+				</####>
+			</div>
+		</body>
 
 		<back xml:lang="it">
 			<div type="notes">
@@ -217,3 +218,4 @@
 	</text>
 
 </TEI>
+
