@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- <!DOCTYPE TEI SYSTEM "tei_all.dtd"> --> 
+<!-- questo è un commento: 
+ sono parti di XML che non vengono processate dall'elaboratore
+ ma servono all'utente per commentare il codice.
+ I commenti sono sempre racchiusi tra questa precisa sequenza
+ di parentesi e trattini -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<!-- radice del documento, con namespace -->
+	<teiHeader xml:lang="it">
+	<!-- metadati -->
+		<fileDesc>
+			<titleStmt>
+				<title>Titolo del documento digitale</title>
+				<respStmt>
+					<resp>Encoding by</resp><!-- responsabile/i della codifica -->
+					<name xml:id="NC">Nome Cognome</name>
+					<name xml:id="ANC">Altro Nome Cognome</name>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+			<!-- tipo di edizione -->
+				<edition>Digital edition
+					<date when="2025-12">Dicembre 2025</date>
+				</edition>
+				<respStmt>
+					<resp>Edizione digitale realizzata per il Corso di ###, A.A. 2025/2026, tenuto dal prof. </resp>
+					<name ref="#NP">Nome Professore</name>
+				</respStmt>
+				<respStmt>
+					<resp>Transcription by</resp><!-- responsabile della trascrizione del testo, se c'è -->
+					<name xml:id="NT">Nome Trascrittore</name>
+				</respStmt>
+			</editionStmt>
+			<publicationStmt>
+				<authority>Università di Pavia</authority>
+				<availability status="free">
+					<p>© Laboratorio di Codifica in TEI</p>
+				</availability>
+				<publisher />
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</licence>
+					<!-- sigla ufficiale per la licenza aperta creative commons -->
+				</availability>
+				<idno type="filename">lettera_modello.xml</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<!-- qui vanno eventuali liste di persone o luoghi citati nel testo -->
+				<listPerson>
+					<person xml:id="AmilcarePonchielli">
+						<persName>
+							<ref type="VIAF" target="http://viaf.org/viaf/10034325"/>
+							<ref type="DNB" target="http://d-nb.info/gnd/119060507"/>
+							<name>Amilcare</name>
+							<surname>Ponchielli</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1834">1834</date>
+							<placeName>Paderno Fasolaro</placeName>
+						</birth>
+						<death>
+							<date when="1886">1886</date>
+							<placeName>Milano</placeName>
+						</death>
+						<note>
+							<p>Compositore italiano.</p>
+						</note>
+					</person>
+					<person xml:id="TeresinaBrambilla">
+						<persName>
+							<ref type="VIAF" target="http://viaf.org/viaf/64341188"/>
+							<name>Teresina</name>
+							<surname>Brambilla</surname>
+						</persName>
+						<sex>F</sex>
+						<birth>
+							<date when="1845">1845</date>
+							<placeName>Cassano d'Adda</placeName>
+						</birth>
+						<death>
+							<date when="1921">1921</date>
+							<placeName>Vercelli</placeName>
+						</death>
+						<note>
+							<p>Soprano italiano, moglie di Amilcare Ponchielli.</p>
+						</note>
+					</person>
+				</listPerson>
+				<listPlace>
+					<place xml:id="Milano">
+						<placeName ref="https://www.geonames.org/3173435/">Milano</placeName>
+						<country key="IT">Italia</country>
+						<note></note>
+					</place>
+					<place xml:id="Livorno">
+						<placeName ref="https://www.geonames.org/3174659/">Livorno</placeName>
+						<country key="IT">Italia</country>
+						<note></note>
+					</place>
+				</listPlace>
+				
+				<msDesc>
+				<!-- descrizione bibliografica del manoscritto, se presente -->
+					<msIdentifier>
+						<country>Italy</country>
+						<settlement>Cremona</settlement>
+						<institution>Biblioteca Statale di Cremona</institution>
+						<repository role="fondo">Nome Fondo</repository>
+						<idno type="inventory">segnatura</idno>
+						<altIdentifier>
+							<idno type="collocation">Collocazione all'interno dell'archivio o del museo, se conosciuta.</idno>
+						</altIdentifier>
+					</msIdentifier>
+					<msContents>
+					<!-- descrizione del contenuto della fonte pimaria -->
+						<msItem>
+							<author ref="#riferimentoAllaListaPersone">Nome dell'Autore</author>
+							<title xml:lang="it">
+							<!-- titolo della lettera o della cartolina postale -->
+								<persName ref="#AmilcarePonchielli">Amilcare Ponchielli</persName> a
+								<persName ref="#TeresinaBrambilla">Teresina Brambilla</persName>, in
+								<placeName ref="#Milano">Milano</placeName>,
+								<date when="1882-12-05">5 dicembre 1882</date>
+							</title>
+							<textLang mainLang="it-x-800">Italiano di inizio Ottocento.</textLang>
+							<note>Eventuali informazioni sul carteggio o sulla lettera stessa.</note>
+						</msItem>
+					</msContents>
+					<physDesc>
+						<objectDesc>
+							<supportDesc>
+							<!-- descrizione del supporto fisico -->
+								<support>
+									<material>Descrizione della carta su cui la lettera è scritta, descrizione dell'inchiostro</material>
+									<watermark>Sono presenti filigrane?</watermark>
+									<stamp>Sono presenti sigilli, timbri o francobolli postali?</stamp>
+								</support>
+								<extent>
+									<measure type="folio">1</measure>
+									<!-- quante pagine è lungo il documento? -->
+									<dimensions unit="mm">
+									<!-- dimensioni del documento, misurante in millimetri o centimetri (da precisare in @unit) -->
+										<height>202</height>
+										<width>120</width>
+									</dimensions>
+								</extent>
+								<collation>
+									Piegatura e disposizione del testo.
+								</collation>
+								<condition>
+									<p>Condizioni fisiche del documento: è ben leggibile? presenta lacune, buchi, strappi? L'inchiostro è sbiadito?</p>
+								</condition>
+							</supportDesc>
+						</objectDesc>
+						<handDesc hands="2">
+						<!-- il documento è scritto da più persone? indicarne il numero in @n-->
+							<handNote>
+								<p>Descrivere la scrittura: a macchina? a mano libera? corsiva?</p>
+							</handNote>
+							<handNote xml:id="h1">
+								<p>Se sono riconoscibili più mani (ad esempio, quella del catalogatore, oltre a quella dell'autore) vanno segnalate qui.</p>
+							</handNote>
+						</handDesc>
+						<sealDesc>
+							<seal>
+								<p>Sono presenti sigilli?</p>
+							</seal>
+						</sealDesc>
+					</physDesc>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+
+			<!-- ############################################ ESERCIZIO DI CODIFICA #######################################-->
+			<correspDesc>
+				<correspAction type="sent">
+					<persName ref="#AmilcarePonchielli">Amilcare Ponchielli</persName>
+					<placeName ref="#Milano">Milano</placeName>
+					<date when="1882-12-05">5 dicembre 1882</date>
+				</correspAction>
+
+				<correspAction type="received">
+					<persName ref="#TeresinaBrambilla">Teresina Brambilla</persName>
+					<placeName ref="#Livorno">Livorno</placeName>
+					<date>unknown</date>
+				</correspAction>
+
+				<correspContext>
+					<p>Non si conosce il contesto di riferimento.</p>
+				</correspContext>
+
+			</correspDesc>
+			<!-- ############################################ ESERCIZIO DI CODIFICA #######################################-->
+			
+			<textClass>
+				<keywords scheme="http://thes.bncf.firenze.sbn.it">
+				<!-- categorizzazione della Bilioteca Nazionale Centrale di Firenze-->
+					<term>Lettera</term>
+				</keywords>
+			</textClass>
+			<langUsage>
+			<!-- lingue usate nella lettera: per le sigle corrispondenti si vedano le linee guida della TEI -->
+				<language ident="it">Italiano</language>
+				<language ident="it-x-800">Italiano di inizio Ottocento</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc status="published">
+		<!-- registrazione di eventuali processi di revisione -->
+			<change status="first-draft" when="2025-12">First draft available in December 2025</change>
+			<change status="final-draft" when="2026-01">Final draft available in January 2026</change>
+		</revisionDesc>
+	</teiHeader>
+
+	<!-- ############################################ ESERCIZIO DI CODIFICA #######################################-->
+	<text subtype="manuscript" type="cartolina" xml:id="Ms.Gov.464.34">
+	<!-- rappresentazione del contenuto testuale -->
+		<front> 
+			<!-- Qui può essere codificato il recto della cartolina (immagine 001, con indirizzo) 
+			 
+			Timbro Postale: Milano | 5 | 12 82 | 9S | Ferrovia
+			All’Egregia artista di canto siga Teresina
+			Ponchielli Brambilla.
+			Via delle Bandiere 3 2° Po
+			Livorno
+			
+			-->
+			<pb n="1"/>
+		</front>
+
+		<body xml:lang="it"> <!-- lettera vera e propria -->
+			<pb n="2" />
+
+
+			<div type="content">
+				<opener>
+					<salute>
+						<hi rend="underline">Cara el me nuli</hi>
+					</salute>
+					<dateline>
+						<date when="1882-12-05">5 
+							<choice>
+								<abbr>10.bre</abbr>
+								<expan>dicembre</expan>
+							</choice> 1882.
+						</date>
+					</dateline>
+					<placeName ref="#Milano">Milano</placeName>
+				</opener>
+				<p>
+				<lb />Ho ricevuto oggi la
+				<lb />tua in data del 3 coi giornali e gli articoli staccati che consegnerò al
+				<lb /><hi rend="underline">Trovatore</hi>. <persName ref="#Bedogni">Bedogni</persName>è assente da Milano – si trova a Genova, dove io 
+				<lb />gli ho spedito una lettera per Rossi raccomandandolo perché possa 
+				<lb />presentarlo alla<hi rend="underline"><persName ref="#Badino">Badino</persName></hi>. 
+				<lb />[...] gli amici - 
+				</p>
+				<closer>
+					T'invio i soliti abbracci per parte della <rs>zia</rs>, zie etc. - 
+					<lb />Gildo<supplied resp="#NT">,</supplied> Mariettina, e baminoni e da me abbiti sempre infiniti baci dal 
+					<salute>
+						tuo 
+						<choice>
+							<abbr>aff.<hi rend="apice">o</hi></abbr>
+							<expan>aff<supplied resp="#NT">[ettuos]</supplied>o</expan>
+						</choice>
+						nuli
+					</salute>
+					<signed>
+						<persName ref="#AmilcarePonchielli">Amilcare</persName>
+					</signed>
+				</closer>
+				<postscript>
+					<p>Tante cose per parte della <rs>Maestra</rs></p>
+				</postscript>
+			</div>
+		</body>
+
+		<back xml:lang="it">
+			<div type="notes">
+				<div type="ann_notes">
+					<p>Qui si possono aggiungere note editoriali</p>
+				</div>
+			</div>
+			<div type="bibliography">
+			<!-- BIBLIOGRAFIA-->
+				<listBibl xml:id="LL1_7_bibliography">
+					<head>Bibliografia della lettera</head>
+					<bibl xml:id="entrataBIbliografica1">
+						Autore, Titolo, Luogo: editore, anno.
+					</bibl>
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
