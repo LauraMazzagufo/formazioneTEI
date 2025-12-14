@@ -43,5 +43,79 @@ Si tratta del documento "lettera_modello.xml", ma modificato in modo tale da com
 
 Qui modifiche effettuate:
 ```xml
+<!-- correspDesc: -->
+			<!-- ############################################ ESERCIZIO DI CODIFICA #######################################-->
+			<correspDesc>
+				<correspAction type="sent">
+					<persName ref="#AmilcarePonchielli">Amilcare Ponchielli</persName>
+					<placeName ref="#Milano">Milano</placeName>
+					<date when="1882-12-05">5 dicembre 1882</date>
+				</correspAction>
 
+				<correspAction type="received">
+					<persName ref="#TeresinaBrambilla">Teresina Brambilla</persName>
+					<placeName ref="#Livorno">Livorno</placeName>
+					<date>unknown</date>
+				</correspAction>
+
+				<correspContext>
+					<p>Non si conosce il contesto di riferimento.</p>
+				</correspContext>
+				
+			</correspDesc>
+			<!-- ############################################ ESERCIZIO DI CODIFICA #######################################-->
+			
+<!-- liste in surceDesc -->
+<listPerson>
+					<person xml:id="AmilcarePonchielli">
+						<ref type="VIAF" target="http://viaf.org/viaf/10034325"/>
+						<ref type="DNB" target="http://d-nb.info/gnd/119060507"/>
+						<forename>Amilcare</forename>
+						<surname>Ponchielli</surname>
+						<sex>M</sex>
+						<birth>
+							<date when="1834">1834</date>
+							<placeName>Paderno Fasolaro</placeName>
+						</birth>
+						<death>
+							<date when="1886">1886</date>
+							<placeName>Milano</placeName>
+						</death>
+						<note>
+							<p>Compositore italiano.</p>
+						</note>
+					</person>
+
+					<person xml:id="TeresinaBrambilla">
+						<ref type="VIAF" target="http://viaf.org/viaf/64341188"/>
+						<forename>Teresina</forename>
+						<surname>Brambilla</surname>
+						<sex>F</sex>
+						<birth>
+							<date when="1845">1845</date>
+							<placeName>Cassano d'Adda</placeName>
+						</birth>
+						<death>
+							<date when="1921">1921</date>
+							<placeName>Vercelli</placeName>
+						</death>
+						<note>
+							<p>Soprano italiano, moglie di Amilcare Ponchielli.</p>
+						</note>
+					</person>
+				</listPerson>
+
+				<listPlace>
+					<place xml:id="Milano">
+						<placeName ref="https://www.geonames.org/3173435/">Milano</placeName>
+						<country key="IT">Italia</country>
+						<note></note>
+					</place>
+
+					<place xml:id="Livorno">
+						<placeName ref="https://www.geonames.org/3174659/">Livorno</placeName>
+						<country key="IT">Italia</country>
+						<note></note>
+					</place>
+				</listPlace>
 ```
