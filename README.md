@@ -171,8 +171,16 @@ Qui modifiche effettuate:
 </body>
 ```
 
+## 7-8. immagini "18821205Teresina_Ms.Gov.464.34_page_0.jpg" e "18821205Teresina_Ms.Gov.464.34_page_1.jpg"
+Vai all'[immagine 00](https://github.com/LauraMazzagufo/formazioneTEI/blob/main/18821205Teresina_Ms.Gov.464.34_page_0.jpg) e all'[immagine 01](https://github.com/LauraMazzagufo/formazioneTEI/blob/main/18821205Teresina_Ms.Gov.464.34_page_1.jpg)
 
-## 7. documento "lettera_compilata.xml"
+Riferimento slide: #49 - Dalla teoria alla pratica > Codifica di un testo epistolare
+
+Sono le riproduzioni fotgrafiche della cartolina di Ponchilli da codificare nell'esercizio proposto.
+
+
+
+## 9. documento "lettera_compilata.xml"
 Vai al [documento](https://github.com/LauraMazzagufo/formazioneTEI/blob/main/lettera_compilata.xml)
 
 Riferimento slide: #52 - Dalla teoria alla pratica > Codifica di un testo epistolare (e sgg)
