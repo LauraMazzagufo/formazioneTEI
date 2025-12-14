@@ -170,3 +170,12 @@ Qui modifiche effettuate:
 </div>
 </body>
 ```
+
+
+## 7. documento "lettera_compilata.xml"
+Vai al [documento](https://github.com/LauraMazzagufo/formazioneTEI/blob/main/lettera_compilata.xml)
+
+Riferimento slide: #52 - Dalla teoria alla pratica > Codifica di un testo epistolare (e sgg)
+
+Si tratta del documento "lettera_da-compilare.xml", riempito delle parti richieste nell'esercizio precedente.
+
