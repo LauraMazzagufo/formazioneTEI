@@ -29,7 +29,7 @@ Riferimento slide: #38 - TEI > Dalla teoria alla pratica (e segg.)
 ## 5. documento "lettera_modello.xml"
 Vai al [documento](https://github.com/LauraMazzagufo/formazioneTEI/blob/main/lettera_modello.xml)
 
-Riferimento slide: #34 - TEI > correspDesc (e segg.)
+Riferimento slide: #39 - TEI > correspDesc (e segg.)
 
 Modello di codifica per una lettera, tratto da LL1_7.xml, con spiegazioni e commenti.
 
