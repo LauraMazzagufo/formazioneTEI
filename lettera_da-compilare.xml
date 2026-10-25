@@ -155,20 +155,20 @@
 		<pb n="2" />
 		
 			<div type="content">
-				<####1>
-					<####2>
+				<####3>
+					<####1>
 						<hi rend="underline">Cara el me nuli</hi>
-					</####2>
-					<####3>
+					</####1>
+					<####2>
 						<date when="1882-12-05">5 
 							<choice>
 								<abbr>10.bre</abbr>
 								<expan>dicembre</expan>
 							</choice> 1882.
 						</date>
-					</####3>
+					</####2>
 					<placeName ref="#Milano">Milano</placeName>
-				</####1>
+				</####3>
 				<p>
 				<lb />Ho ricevuto oggi la
 				<lb />tua in data del 3 coi giornali e gli articoli staccati che consegnerò al
