@@ -34,10 +34,20 @@ Riferimento slide: #39 - TEI > correspDesc (e segg.)
 Modello di codifica per una lettera, tratto da LL1_7.xml, con spiegazioni e commenti.
 
 
-## 6. documento "lettera_da-compilare.xml"
+
+## 6-7. immagini "18821205Teresina_Ms.Gov.464.34_page_0.jpg" e "18821205Teresina_Ms.Gov.464.34_page_1.jpg"
+Vai all'[immagine 00](https://github.com/LauraMazzagufo/formazioneTEI/blob/main/18821205Teresina_Ms.Gov.464.34_page_0.jpg) e all'[immagine 01](https://github.com/LauraMazzagufo/formazioneTEI/blob/main/18821205Teresina_Ms.Gov.464.34_page_1.jpg)
+
+Riferimento slide: #42 (immagine 6) e # (immagine 7) - Esercizio > Codifica di un testo epistolare
+
+Sono le riproduzioni fotografiche della cartolina di Ponchilli da codificare nell'esercizio proposto.
+
+
+
+## 8. documento "lettera_da-compilare.xml"
 Vai al [documento](https://github.com/LauraMazzagufo/formazioneTEI/blob/main/lettera_da-compilare.xml)
 
-Riferimento slide: #46 - Esrcizio > Codifica di un testo epistolare
+Riferimento slide: #40 - Esrcizio > Codifica di un testo epistolare
 
 Si tratta del documento "lettera_modello.xml", ma modificato in modo tale da compilarlo in aula, come esercizio di codifica (tagset `correspDesc` e parte del `body`).
 
@@ -171,12 +181,6 @@ Qui modifiche effettuate:
 </body>
 ```
 
-## 7-8. immagini "18821205Teresina_Ms.Gov.464.34_page_0.jpg" e "18821205Teresina_Ms.Gov.464.34_page_1.jpg"
-Vai all'[immagine 00](https://github.com/LauraMazzagufo/formazioneTEI/blob/main/18821205Teresina_Ms.Gov.464.34_page_0.jpg) e all'[immagine 01](https://github.com/LauraMazzagufo/formazioneTEI/blob/main/18821205Teresina_Ms.Gov.464.34_page_1.jpg)
-
-Riferimento slide: #46 - Esercizio > Codifica di un testo epistolare
-
-Sono le riproduzioni fotografiche della cartolina di Ponchilli da codificare nell'esercizio proposto.
 
 
 
