@@ -22,7 +22,7 @@ Si tratta della codifica di una lettera di Vincenzo Bellini, raccolta nell'edizi
 ## 3-4. immagini "LL1.7_0001.jpg" e "LL1.7_0002.jpg"
 Vai all'[immagine 01](https://github.com/LauraMazzagufo/formazioneTEI/blob/main/LL1.7_0001.jpg) e all'[immagine 02](https://github.com/LauraMazzagufo/formazioneTEI/blob/main/LL1.7_0002.jpg)
 
-Riferimento slide: #33 - TEI > Dalla teoria alla pratica (e segg.)
+Riferimento slide: #38 - TEI > Dalla teoria alla pratica (e segg.)
 
 
 
